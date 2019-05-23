@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import {Card, Col, Row, Parallax, Tabs, Tab, Checkbox, DatePicker, } from 'react-materialize'
+import {Slider,Slide,Carousel, Col, Row, Parallax, Tabs, Tab } from 'react-materialize'
+
+//Move Email section to footer
 
 
 //Imported Components
@@ -7,21 +9,63 @@ import HorizontalBarChart from '../Chart'
 
 
 //Imported Images
-import Bridge from '../../Assets/img/bridge.png'
 import Marina from '../../Assets/img/marina.png'
-import Fitbit from '../../Assets/img/fitbit.png'
-import Space from '../../Assets/img/Mac_WallPaper.jpg'
+import Blue from '../../Assets/img/blueBackground.jpeg'
+import Blue2 from '../../Assets/img/blue2.jpeg'
+import BlueStripped from '../../Assets/img/blue_stripped.jpeg'
+
+
+
+
 
 class Home extends Component {
   render() {
     return(
-    <div>
-
+    <div className="body">
+    <section> 
+      <Slider>
+        <Slide>
+            <img src={Blue} />
+          <div className="caption center-align">
+            <h3>
+              WELCOME
+            </h3>
+            <h5 className="light grey-text text-lighten-3">
+            I'm <span className="light grey-text text-lighten 3"><strong>Jonathan Corea</strong></span>
+            </h5>
+          </div>
+        </Slide>
+        <Slide>
+            <img src={Blue2} />
+          <div className="caption center-align">
+            <h3>
+              I'm a full-stack web developer
+            </h3>
+            <h5 className="light grey-text text-lighten-3">
+            located in beautiful, sunny <span className = "light yellow-text">San Diego</span>
+            </h5>
+          </div>
+        </Slide>  
+        <Slide>
+            <img src={BlueStripped} />
+          <div className="caption center-align">
+            <h3>
+              This is my Portfolio
+            </h3>
+            <h5 className="light grey-text text-lighten-3">
+            <span className="text-light blue blue-darken-4">Enjoy.</span>
+            </h5>
+          </div>
+        </Slide>
+      </Slider>
+    </section>
     
-    <section className="container section" id="about">
+    
+    
+    <section className="text-light grey grey-darken-4 section" id="about">
       <div className="row">
-        <div className="col s12 l4 offset-l5">
-          <h1 className="indigo-text text-darken-4">¡Hola!</h1>
+        <div className="col s12 l4 offset-l1">
+          <h1 className="indigo-text text-darken-4">Who am I</h1>
           <p>I'm a web designer/ developer located in beautiful sunny San Diego. Dedicated to building and optimizing web applications with intuitive user experience.</p>
         </div>
       </div>
@@ -45,9 +89,7 @@ class Home extends Component {
 
     </section>
 
-      <div className="prallax-container">
-        <Parallax imageSrc={Marina}/>
-      </div>
+      <hr />
     
    
     <section className="container section Scrollspy" id="portfolio">
@@ -113,24 +155,34 @@ class Home extends Component {
           </section>
 
           <footer className="page-footer grey darken-3" >
-          <div className="container" >
+          <div className="container center-align" >
             <div className="row">
-              <div className="col s12 l6">
+              <div className="col s12 l6 offset-l3">
                 <h5 className="white-text">Get in Touch</h5>
                 <p className="grey-text text-ligthen-3">I am currently available for freelance work or learn more about what I do.</p>
               </div>
-              <div className="col s12 l4 offset-l2">
-                <h5 className="white-text">Connect</h5>
-                <ul>
-                  <li><a href="#" className="grey-text text-ligthen-3">Github</a></li>
-                  <li><a href="#" className="grey-text text-ligthen-3">LinkedIn</a></li>
-                </ul>
+          </div>
+          </div>
+          <div className="container icon-flex wrap row">
+            <div className="col s12 l1 offset-l6 pull-l1" >
+              <a href="https://www.linkedin.com/in/jon-corea/">
+                <div className="flex-icon" id="icon-linkedIn">
+                  <span style={{fontSize: "2em"}}><i class="fab fa-linkedin"></i></span>
+                </div>
+              </a>
+            </div>
+            <div className="col s12 l1 pull-l1">
+              <a href="https://github.com/jacorea">
+                <div className="flex-icon" id="icon-linkedIn">
+                  <span style={{fontSize: "2em"}}><i class="fab fa-github-square"></i></span>
+                </div>
+              </a>
             </div>
           </div>
-          </div>
+          
           <div className="footer-copyright grey darken-4">
             <div className="container center-align">
-              &copy;2019 Valet Service
+              Jonathan Corea &copy; 2019
             </div>
           </div>
         </footer>
