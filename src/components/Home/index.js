@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Slider,Slide,Carousel, Col, Row, Parallax, Tabs, Tab } from 'react-materialize'
+import {Slider,Slide,Card, Carousel, Col, Row, Parallax, Tabs, Tab } from 'react-materialize'
 
 //Move Email section to footer
 
@@ -62,11 +62,18 @@ class Home extends Component {
     
     
     
-    <section className="text-light grey grey-darken-4 section" id="about">
+    <section className="blue darken-4 section" id="about">
       <div className="row">
-        <div className="col s12 l4 offset-l1">
-          <h1 className="indigo-text text-darken-4">Who am I</h1>
+        <div className="col s12 m8 l4 offset-l5">
+          <h1 className="white-text text-darken-4">ABOUT</h1>
+        </div>
+        <div className="col s12 m8 l4 offset-l4">
+          <p><hr/></p>
+        </div>
+        <div className="col s12 m8 l4 offset-l4">
+          <Card title="Me">
           <p>I'm a web designer/ developer located in beautiful sunny San Diego. Dedicated to building and optimizing web applications with intuitive user experience.</p>
+          </Card>
         </div>
       </div>
       <div className="row">
