@@ -131,17 +131,24 @@ class Home extends Component {
    
 
         <Parallax imageSrc={Marina}/>
-        <section className="section container" id="contact">
+       
+
+          <footer className="page-footer grey darken-3 Scrollspy" id="contact">
+          <div>
+            <div className="row">
+              <div className="col s12 l6 offset-l3">
+                <h2 className="white-text center-align">Get in Touch</h2>
             <div className="row">
               <div className="col s12 l5">
-                <h2 className="indigo-text text-darken-4">Contact</h2>
-                <p className="indigo-text text-lighten-2">Want to work together?</p>
+                <h3 className="grey-text text-lighten-2">Contact</h3>
+                <p className="grey-text text-lighten-2">Want to work together?</p>
                 <p>If you have a project in mind to get started and you are interested in partnering up. I'm currently available for freelance work.</p>
                 <br />
                 
                 <p>Let's get in touch!</p>
               </div>
               <div className="col s12 l5 offset-l2">
+                <br/>
                 <form action="#">
                   <div className="input-field">
                     <i className="material-icons prefix">email</i>
@@ -164,14 +171,7 @@ class Home extends Component {
                 </form>
               </div>
             </div>
-          </section>
-
-          <footer className="page-footer grey darken-3" >
-          <div className="container center-align" >
-            <div className="row">
-              <div className="col s12 l6 offset-l3">
-                <h5 className="white-text">Get in Touch</h5>
-                <p className="grey-text text-ligthen-3">I am currently available for freelance work or learn more about what I do.</p>
+                <h4 className="grey-text text-ligthen-3 col offset-l4">Social Icons</h4>
               </div>
           </div>
           </div>
@@ -179,14 +179,14 @@ class Home extends Component {
             <div className="col s12 l1 offset-l6 pull-l1" >
               <a href="https://www.linkedin.com/in/jon-corea/">
                 <div className="flex-icon" id="icon-linkedIn">
-                  <span style={{fontSize: "2em"}}><i class="fab fa-linkedin"></i></span>
+                  <span style={{fontSize: "2em"}}><i className="fab fa-linkedin grey-text text-lighten-2"></i></span>
                 </div>
               </a>
             </div>
             <div className="col s12 l1 pull-l1">
               <a href="https://github.com/jacorea">
                 <div className="flex-icon" id="icon-linkedIn">
-                  <span style={{fontSize: "2em"}}><i class="fab fa-github-square"></i></span>
+                  <span style={{fontSize: "2em"}}><i className="fab fa-github-square grey-text text-lighten-2"></i></span>
                 </div>
               </a>
             </div>
