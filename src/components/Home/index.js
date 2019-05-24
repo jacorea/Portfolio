@@ -13,6 +13,7 @@ import Marina from '../../Assets/img/marina.png'
 import Blue from '../../Assets/img/blueBackground.jpeg'
 import Blue2 from '../../Assets/img/blue2.jpeg'
 import BlueStripped from '../../Assets/img/blue_stripped.jpeg'
+import headShot from '../../Assets/img/JonathanCorea_headshot.jpg'
 
 
 
@@ -70,26 +71,30 @@ class Home extends Component {
         <div className="col s12 m8 l4 offset-l4">
           <p><hr/></p>
         </div>
-        <div className="col s12 m8 l4 offset-l4">
-          <Card title="Me">
+      </div>
+      <div className="row">
+        <div className="col s12 m8 l3 offset-l1">
+          <Card>
+          <img className="responsive-img" src={headShot} />
+          <h5>Bio</h5>
           <p>I'm a web designer/ developer located in beautiful sunny San Diego. Dedicated to building and optimizing web applications with intuitive user experience.</p>
           </Card>
         </div>
       </div>
       <div className="row">
-        <div className="col s12 l2 offset-l1">
-          <i className="large material-icons prefix">important_devices</i>
-          <h3>Dynamic</h3>
+        <div className="col s12 l2 offset-l2">
+          <i className="large material-icons prefix teal-text text-lighten-2 col offset-l2">devices_other</i>
+          <h3 id="about">Dynamic</h3>
           <p className="center-align">Customizable to all devices</p>
         </div>
-        <div className="col s12 l2 offset-l2">
-          <span style={{fontSize: "4em"}}><i className="fas fa-arrow-circle-up"></i></span>
-          <h3>Intuitive</h3>
+        <div className="col s12 l2 offset-l1">
+        <i className="large material-icons prefix prefix yellow-text text-lighten-3 col offset-l1">lightbulb_outline</i>
+          <h3 id="about">Intuitive</h3>
           <p className="center-align">Easy user experience/Interface</p>
         </div>
-        <div className="col s12 l2 offset-l3">
-          <i className="large material-icons prefix">mood</i>
-          <h3>Responsive</h3>
+        <div className="col s12 l2 offset-l1">
+          <i className="large material-icons prefix cyan-text text-lighten-4 col offset-l2">layers</i>
+          <h3 id="about">Responsive</h3>
           <p className="center-align">Lively & Interactive Pages</p>
         </div>
       </div>
