@@ -63,7 +63,7 @@ class Home extends Component {
     
     
     
-    <section className="blue darken-4 section" id="about">
+    <section className="indigo darken-4 section" id="about">
       <div className="row">
         <div className="col s12 m8 l4 offset-l5">
           <h1 className="white-text text-darken-4">ABOUT</h1>
@@ -98,16 +98,42 @@ class Home extends Component {
           <p className="center-align">Lively & Interactive Pages</p>
         </div>
       </div>
-
     </section>
-
-      <hr />
     
-   
-    <section className="container section Scrollspy" id="portfolio">
+    <section className="white darken-4 section" id="about">
+    <div className="row">
+      <div className="col s12 m8 l4 offset-l5">
+        <h1 className="indigo-text text-darken-4">PROJECTS</h1>
+      </div>
+      <div className="col s12 m8 l5 offset-l4">
+        <p><hr/></p>
+      </div>
+    </div>
+    <div className="row">
+      <div className="col s12 m8 l3 offset-l2">
+        <Card>
+        <img className="responsive-img" src={headShot} />
+        <h5>OnTime</h5>
+        <p>Inspired from TodoIst task list. Never miss a task or assignment. Try out OnTime ReactJS app to keep track of bills,chores, and to do what you enjoy.</p>
+        </Card>
+      </div>
+      <div className="col s12 m8 l3 offset-l1">
+        <Card>
+        <img className="responsive-img" src={headShot} />
+        <h5>Pen&Note</h5>
+        <p>Similar to Evernote's note taking. Take you mouse and keys on a new adventure with this RubyonRails app.</p>
+        <br/>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+  
+    <section className="white darken-4 section Scrollspy" id="portfolio">
           <div className="row">
             <div className="col s12 l4 offset-l2" >
-              <h2 className="indigo-text text-darken-4">What I Do</h2>
+              <h2 className="indigo-text text-darken-4">Projects</h2>
               <p>
                 <strong>Valet Service</strong> is proud to work with local businesses in your area. Our work consists of close collaboration between local businesses and customers aim to provide guaranteed customer satisfaction upon each visit.
               </p>
