@@ -14,6 +14,9 @@ import Blue from '../../Assets/img/blueBackground.jpeg'
 import Blue2 from '../../Assets/img/blue2.jpeg'
 import BlueStripped from '../../Assets/img/blue_stripped.jpeg'
 import headShot from '../../Assets/img/JonathanCorea_headshot.jpg'
+import onTask from '../../Assets/img/onTask'
+import todo from '../../Assets/img/todo.jpeg'
+import penNote from '../../Assets/img/pen&note.png'
 
 
 
@@ -112,14 +115,14 @@ class Home extends Component {
     <div className="row">
       <div className="col s12 m8 l3 offset-l2">
         <Card>
-        <img className="responsive-img" src={headShot} />
+        <img className="responsive-img" src={onTask} />
         <h5>OnTime</h5>
         <p>Inspired from TodoIst task list. Never miss a task or assignment. Try out OnTime ReactJS app to keep track of bills,chores, and to do what you enjoy.</p>
         </Card>
       </div>
       <div className="col s12 m8 l3 offset-l1">
         <Card>
-        <img className="responsive-img" src={headShot} />
+        <img className="responsive-img" src={penNote} />
         <h5>Pen&Note</h5>
         <p>Similar to Evernote's note taking. Take you mouse and keys on a new adventure with this RubyonRails app.</p>
         <br/>
