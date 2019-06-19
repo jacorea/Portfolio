@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
-import {Slider,Slide,Card, Carousel, Col, Row, Parallax, Tabs, Tab } from 'react-materialize'
-
-//Move Email section to footer
-
-
-//Imported Components
-import HorizontalBarChart from '../Chart'
-
-
+import { Card, Parallax, Slide, Slider, Tab, Tabs } from 'react-materialize';
+import Blue2 from '../../Assets/img/blue2.jpeg';
+import Blue from '../../Assets/img/blueBackground.jpeg';
+import BlueStripped from '../../Assets/img/blue_stripped.jpeg';
+import headShot from '../../Assets/img/JonathanCorea_headshot.jpg';
 //Imported Images
-import Marina from '../../Assets/img/marina.png'
-import Blue from '../../Assets/img/blueBackground.jpeg'
-import Blue2 from '../../Assets/img/blue2.jpeg'
-import BlueStripped from '../../Assets/img/blue_stripped.jpeg'
-import headShot from '../../Assets/img/JonathanCorea_headshot.jpg'
-import onTask from '../../Assets/img/onTask.jpg'
-import todo from '../../Assets/img/todo.jpeg'
-import penNote from '../../Assets/img/pen&note.png'
+import Marina from '../../Assets/img/marina.png';
+import onTask from '../../Assets/img/onTask_square.jpg';
+import penNote from '../../Assets/img/pen&note_square.png';
+
+
+
 
 
 
@@ -77,33 +71,33 @@ class Home extends Component {
       </div>
       <div className="row">
         <div className="col s12 m8 l3 offset-l1">
-          <Card>
-          <img className="responsive-img" src={headShot} />
+          <div className="about">
+          <img className=" circle responsive-img" src={headShot} />
           <h5>Bio</h5>
           <p>I'm a web designer/ developer located in beautiful sunny San Diego. Dedicated to building and optimizing web applications with intuitive user experience.</p>
-          </Card>
+          </div>
         </div>
-      </div>
-      <div className="row">
-        <div className="col s12 l2 offset-l2">
+        <div className="col s12 l2 offset-l1">
           <i className="large material-icons prefix teal-text text-lighten-2 col offset-l2">devices_other</i>
-          <h3 id="about">Dynamic</h3>
-          <p className="center-align">Customizable to all devices</p>
+          <h3 id="about" className="about">Dynamic</h3>
+          <p className="center-align about">Customizable to all devices</p>
         </div>
-        <div className="col s12 l2 offset-l1">
-        <i className="large material-icons prefix prefix yellow-text text-lighten-3 col offset-l1">lightbulb_outline</i>
-          <h3 id="about">Intuitive</h3>
-          <p className="center-align">Easy user experience/Interface</p>
-        </div>
-        <div className="col s12 l2 offset-l1">
-          <i className="large material-icons prefix cyan-text text-lighten-4 col offset-l2">layers</i>
-          <h3 id="about">Responsive</h3>
-          <p className="center-align">Lively & Interactive Pages</p>
+        <div className="row">
+          <div className="col s12 l2 offset-l1">
+          <i className="large material-icons prefix prefix yellow-text text-lighten-3 col offset-l1">lightbulb_outline</i>
+            <h3 id="about"className="about">Intuitive</h3>
+            <p className="center-align" className="about">Easy user experience/Interface</p>
+          </div>
+          <div className="col s12 l2 offset-l1">
+            <i className="large material-icons prefix cyan-text text-lighten-4 col offset-l2">layers</i>
+            <h3 id="about" className="about">Responsive</h3>
+            <p className="center-align about">Lively & Interactive Pages</p>
+          </div>
         </div>
       </div>
     </section>
     
-    <section className="white darken-4 section" id="about">
+    <section className="white darken-4 section" id="portfolio">
     <div className="row">
       <div className="col s12 m8 l4 offset-l5">
         <h1 className="indigo-text text-darken-4">PROJECTS</h1>
@@ -113,33 +107,8 @@ class Home extends Component {
       </div>
     </div>
     <div className="row">
-      <div className="col s12 m8 l3 offset-l2">
-        <Card>
-        <img className="responsive-img" src={onTask} />
-        <h5>OnTime</h5>
-        <p>Inspired from TodoIst task list. Never miss a task or assignment. Try out OnTime ReactJS app to keep track of bills,chores, and to do what you enjoy.</p>
-        <br/>
-        <br/>
-        <br/>
-        </Card>
-      </div>
-      <div className="col s12 m8 l3 offset-l1">
-        <Card>
-        <img className="responsive-img" src={penNote} />
-        <h5>Pen&Note</h5>
-        <p>Similar to Evernote's note taking. Take you mouse and keys on a new adventure with this RubyonRails app.</p>
-        <br/>
-        </Card>
-      </div>
-    </div>
-  </section>
-
-  <hr/>
-  
-    <section className="white darken-4 section Scrollspy" id="portfolio">
-          <div className="row">
             <div className="col s12 l4 offset-l2" >
-              <h2 className="indigo-text text-darken-4">Projects</h2>
+              <h2 className="indigo-text text-darken-4">Description</h2>
               <p>
                 <strong>Valet Service</strong> is proud to work with local businesses in your area. Our work consists of close collaboration between local businesses and customers aim to provide guaranteed customer satisfaction upon each visit.
               </p>
@@ -147,22 +116,53 @@ class Home extends Component {
             </div>
             <div className="col s12 l3 offset-l1">
               <Tabs>
-                  <Tab title="Customer" active>
-                    <h5 className='indigo-text text-darken-4'>CUSTOMER</h5>
-                    <p>Here is how it works - </p>
-                    <p>Download the app.  With the app you can tell us where you are going so that we will be waiting for you.  Call your valet, pay your fare, and tip them all at the push a button. </p>
+                  <Tab title="To-do-List" active>
+                    <h5 className='indigo-text text-darken-4'>ReactJS</h5>
+                    <p>Never be late on an assignment or task. Create own toDo tasks and cross out when finished. It's as simple as that. </p>
                   </Tab>
-                  <Tab id="valet" title="Valet">
-                    <h5 className='indigo-text text-darken-4'>VALET</h5>
-                    <p>Raise the bar with valet services that allow you to develop stronger and mutually productive relationships with your clients.  Use our reports to track your incoming revenues, and manage day-to-day operations through a smart phone or tablet.</p>
+                  <Tab id="valet" title="Note&Pen">
+                    <h5 className='indigo-text text-darken-4'>Rails</h5>
+                    <p>Whether capturing an artistic thought for the day or noting an idea that will make a world of a difference one day.</p>
                   </Tab>
                 </Tabs>
                 </div>
               </div>
-        </section>
-   
 
-        <Parallax imageSrc={Marina}/>
+    <div className="container"> 
+      <div className="row">
+      <div className="col s12 l5">
+          <div className="card">
+            <div className="card-image">
+              <img src={onTask} alt=""/>
+            </div>
+            <div className="card-content">
+              <span className="card-title">To-do-List</span>
+              <p>Inspired from TodoIst task list. Never miss a task or assignment with this ReactJS app.</p>
+            </div>
+            <div className="card-action">
+              <a href="https://to-do-list-jcorea.herokuapp.com/">view more</a>
+            </div>
+          </div>
+        </div>
+        <div className="col s12 l5 offset-l2">
+          <div className="card">
+            <div className="card-image">
+              <img src={penNote} alt=""/>
+            </div>
+            <div className="card-content">
+              <span className="card-title">Note&Pen</span>
+              <p>Similar to Evernote's note taking. Take you mouse and keys on a new adventure.</p>
+            </div>
+            <div className="card-action">
+              <a href="https://note-pen.herokuapp.com/">view more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Parallax imageSrc={Marina}/>
        
 
           <footer className="page-footer grey darken-3 Scrollspy" id="contact">
