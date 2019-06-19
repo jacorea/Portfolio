@@ -109,9 +109,7 @@ class Home extends Component {
     <div className="row">
             <div className="col s12 l4 offset-l2" >
               <h2 className="indigo-text text-darken-4">Description</h2>
-              <p>
-                <strong>Valet Service</strong> is proud to work with local businesses in your area. Our work consists of close collaboration between local businesses and customers aim to provide guaranteed customer satisfaction upon each visit.
-              </p>
+              <p>Take a look at the following to-do-list and note taking apps completed with ReactJS and RubyonRails framework, respectively.</p>
 
             </div>
             <div className="col s12 l3 offset-l1">
