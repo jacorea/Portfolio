@@ -109,55 +109,54 @@ class Home extends Component {
       </div>
     </div>
     <div className="row">
-            <div className="col s12 l4 offset-l2" >
-              <h2 className="indigo-text text-darken-4">Description</h2>
-              <p>Take a look at the following to-do-list and note taking apps completed with ReactJS and RubyonRails framework, respectively.</p>
+      <div className="col s12 l4 offset-l2" >
+        <h2 className="indigo-text text-darken-4">Description</h2>
+        <p>Take a look at the following to-do-list and note taking apps completed with ReactJS and RubyonRails framework, respectively.</p>
 
-            </div>
-            <div className="col s12 l3 offset-l1">
-              <Tabs>
-                  <Tab title="To-do-List" active>
-                    <h5 className='indigo-text text-darken-4'>ReactJS</h5>
-                    <p>Never be late on an assignment or task. Create own toDo tasks and cross out when finished. It's as simple as that. </p>
-                  </Tab>
-                  <Tab id="valet" title="Note&Pen">
-                    <h5 className='indigo-text text-darken-4'>Rails</h5>
-                    <p>Whether capturing an artistic thought for the day or noting an idea that will make a world of a difference one day.</p>
-                  </Tab>
-                </Tabs>
-                </div>
+      </div>
+      <div className="col s12 l3 offset-l1">
+        <Tabs>
+            <Tab title="To-do-List" active>
+              <h5 className='indigo-text text-darken-4'>ReactJS</h5>
+              <p>Never be late on an assignment or task. Create own toDo tasks and cross out when finished. It's as simple as that. </p>
+            </Tab>
+            <Tab id="valet" title="Note&Pen">
+              <h5 className='indigo-text text-darken-4'>Rails</h5>
+              <p>Whether capturing an artistic thought for the day or noting an idea that will make a world of a difference one day.</p>
+            </Tab>
+          </Tabs>
+        </div>
+      </div>
+      <div className="container"> 
+        <div className="row">
+        <div className="col s12 l5">
+            <div className="card">
+              <div className="card-image">
+                <img src={onTask} alt=""/>
               </div>
-
-    <div className="container"> 
-      <div className="row">
-      <div className="col s12 l5">
-          <div className="card">
-            <div className="card-image">
-              <img src={onTask} alt=""/>
-            </div>
-            <div className="card-content">
-              <span className="card-title">To-do-List</span>
-              <p>Inspired from TodoIst task list. Never miss a task or assignment with this ReactJS app.</p>
-            </div>
-            <div className="card-action">
-              <a href="https://to-do-list-jcorea.herokuapp.com/">view more</a>
+              <div className="card-content">
+                <span className="card-title">To-do-List</span>
+                <p>Inspired from TodoIst task list. Never miss a task or assignment with this ReactJS app. Add tasks and mark them as completed once finished.</p>
+              </div>
+              <div className="card-action">
+                <a href="https://to-do-list-jcorea.herokuapp.com/">view more</a>
+              </div>
             </div>
           </div>
-        </div>
-      <div className="col s12 l5 offset-l2">
-          <div className="card">
-            <div className="card-image">
-              <img src={calculator} alt=""/>
-            </div>
-            <div className="card-content">
-              <span className="card-title">Calculator</span>
-              <p>This is a simple calcultor app created in React with basic utilities such as addition, substraction, addition, and multiplication utilizing mathjs.</p>
-            </div>
-            <div className="card-action">
-              <a href="https://simplecalc-jcorea.herokuapp.com/">view more</a>
+        <div className="col s12 l5 offset-l2">
+            <div className="card">
+              <div className="card-image">
+                <img src={calculator} alt=""/>
+              </div>
+              <div className="card-content">
+                <span className="card-title">Calculator</span>
+                <p>This is a simple calcultor app created in React with basic utilities such as addition, substraction, addition, and multiplication utilizing mathjs.</p>
+              </div>
+              <div className="card-action">
+                <a href="https://simplecalc-jcorea.herokuapp.com/">view more</a>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <div className="row">
       <div className="col s12 l5">
