@@ -8,6 +8,8 @@ import headShot from '../../Assets/img/JonathanCorea_headshot.jpg';
 import Marina from '../../Assets/img/marina.png';
 import onTask from '../../Assets/img/onTask_square.jpg';
 import penNote from '../../Assets/img/pen&note_square.png';
+import driveAway from '../../Assets/img/DriveAway-1.png';
+import calculator from '../../Assets/img/calculator.PNG';
 
 
 
@@ -142,6 +144,36 @@ class Home extends Component {
             </div>
           </div>
         </div>
+      <div className="col s12 l5 offset-l2">
+          <div className="card">
+            <div className="card-image">
+              <img src={calculator} alt=""/>
+            </div>
+            <div className="card-content">
+              <span className="card-title">Calculator</span>
+              <p>This is a simple calcultor app created in React with basic utilities such as addition, substraction, addition, and multiplication utilizing mathjs.</p>
+            </div>
+            <div className="card-action">
+              <a href="https://simplecalc-jcorea.herokuapp.com/">view more</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="row">
+      <div className="col s12 l5">
+          <div className="card">
+            <div className="card-image">
+              <img src={driveAway} alt=""/>
+            </div>
+            <div className="card-content">
+              <span className="card-title">DriveAway</span>
+              <p>It's a valet app created in Reactjs frontend and rails backend utilizing Google Maps API.</p>
+            </div>
+            <div className="card-action">
+              <a href="https://vast-wildwood-28622.herokuapp.com/">view more</a>
+            </div>
+          </div>
+        </div>
         <div className="col s12 l5 offset-l2">
           <div className="card">
             <div className="card-image">
@@ -160,7 +192,7 @@ class Home extends Component {
     </div>
   </section>
 
-  <Parallax imageSrc={Marina}/>
+ 
        
 
           <footer className="page-footer grey darken-3 Scrollspy" id="contact">
